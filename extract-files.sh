@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=cupid
+DEVICE=zeus
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
@@ -53,7 +53,7 @@ fi
 function blob_fixup() {
     case "${1}" in
         vendor/lib64/libqtikeymint.so)
-            "${PATCHELF}" --add-needed "android.hardware.security.rkp-V1-ndk.so" "${2}"
+            "${PATCHELF}" --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
            ;;
     esac
 }

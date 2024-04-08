@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/cupid
+DEVICE_PATH := device/xiaomi/zeus
 
 BOARD_SYSTEMSDK_VERSIONS := 31
 
@@ -158,9 +158,6 @@ TW_H_OFFSET := -90
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
 TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME := "IVibrator/vibratorfeature"
 TW_EXCLUDE_TWRPAPP := true
-
-# TWRP Version
-TW_DEVICE_VERSION := White Wolf v7
 
 # Load kernel modules for touch & vibrator
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))

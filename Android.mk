@@ -6,6 +6,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),cupid)
+ifeq ($(TARGET_DEVICE),zeus)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
